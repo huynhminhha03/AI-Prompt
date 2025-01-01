@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.subtitle {
+  height: 100%;
+  font-size: 14px;
+  color: #555;
+  background: #e8f6fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.form-left {
+  width: 40%; /* Điều chỉnh độ rộng */
+  padding-right: 20px;
+}
+
+.form-right {
+  width: 60%; /* Phần kết quả chiếm 60% */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 5px;
+}
+.formGroup .select,
+.formGroup .textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+.formGroup .textarea {
+  resize: none;
+}
+.formGroup .note {
+  font-size: 12px;
+  color: #888;
+  margin-top: -5px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.button:active {
+  transform: scale(0.98);
+}
+.button:disabled {
+  background-color: #d1d1d1;
+  color: #aaa;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.result {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 150px; /* Chiều cao tối thiểu */
+  max-height: 400px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.resultContent {
+  font-size: 14px;
+  color: #333;
+}
+
+.charCount {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .form-left {
+    width: 100%; /* Phần form chiếm toàn bộ chiều rộng trên thiết bị di động */
+    padding-right: 0;
+  }
+  .form-right {
+    width: 100%; /* Phần kết quả cũng chiếm toàn bộ chiều rộng */
+    height: 100%;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=RewriteArticle.module.css.map */

@@ -1,0 +1,148 @@
+.container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  background: #e8f6fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+.formGroup .select,
+.formGroup .input,
+.formGroup .textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+.formGroup .select:focus,
+.formGroup .input:focus,
+.formGroup .textarea:focus {
+  border-color: #007bff;
+}
+.formGroup .textarea {
+  resize: none;
+}
+.formGroup .note {
+  font-size: 12px;
+  color: #888;
+  margin-top: -5px;
+}
+
+.resultContainer .button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.resultContainer .button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.resultContainer .button:active {
+  transform: scale(0.98);
+}
+.resultContainer .button:disabled {
+  background-color: #d1d1d1;
+  color: #aaa;
+  cursor: not-allowed;
+  transform: none;
+}
+.resultContainer .button:disabled:hover {
+  background-color: #d1d1d1;
+}
+.resultContainer + .resultContainer {
+  margin-top: 10px;
+}
+
+.resultTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.result {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  resize: none;
+  background: #f3f3f3;
+  color: #333;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.button:active {
+  transform: scale(0.98);
+}
+.button:disabled {
+  background-color: #d1d1d1;
+  color: #aaa;
+  cursor: not-allowed;
+  transform: none;
+}
+.button:disabled:hover {
+  background-color: #d1d1d1;
+}
+
+.smallstyle {
+  color: #a29f9f;
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 13px;
+}/*# sourceMappingURL=CreatePromptFromIdeas.module.css.map */

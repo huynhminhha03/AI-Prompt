@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #e1f7fa;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filepond--item {
+  position: relative;
+}
+
+.removeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button {
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  margin: auto;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.button:active {
+  transform: scale(0.98);
+}
+.button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.smallstyle {
+  color: #a29f9f;
+  font-size: 14px;
+  margin-top: 1px;
+  margin-bottom: 13px;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: "cover";
+     object-fit: "cover";
+}
+.previewImage:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.previewImage:active {
+  transform: scale(0.98);
+}
+
+.previewImageContainer {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px #195a97;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.previewImageContainer:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.previewImageContainer:active {
+  transform: scale(0.98);
+}/*# sourceMappingURL=CreatePromptFromImage.module.css.map */

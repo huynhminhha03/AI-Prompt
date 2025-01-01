@@ -1,0 +1,22 @@
+const express = require('express');
+const userController = require('../controllers/UserController');
+const jwtMiddleware = require('../middleware/JWTMiddleware');
+const router = express.Router();
+
+router.post('/register', userController.registerUser.bind(userController));
+router.post('/login', userController.login.bind(userController));
+router.get('/verify-email', userController.verifyEmail.bind(userController));
+router.get('/reset-password', userController.resetPassword.bind(userController));
+router.post('/forget-password', userController.forgetPassword.bind(userController));
+router.post('/change-password', userController.changePassword.bind(userController));
+router.use(jwtMiddleware(["user", "admin"]));
+router.get('/current-user', userController.getCurrentUser.bind(userController));
+router.patch('/current-user', userController.updateUser.bind(userController));
+router.get('/check-balance', userController.checkBalance.bind(userController));
+router.get('/logout', userController.logout.bind(userController));
+router.patch('/update-password', userController.updatePassword.bind(userController));
+router.get("/conversation/all", userController.getAllConversations.bind(userController));
+router.get("/conversation/most-recent", userController.getMostRecentConversations.bind(userController));
+router.get("/conversation-detail/:id", userController.getConversationDetail.bind(userController));
+router.get("/usage-history", userController.getUsageHistory.bind(userController));
+module.exports = router;

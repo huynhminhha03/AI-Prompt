@@ -1,0 +1,146 @@
+@charset "UTF-8";
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  background: #e8f6fa;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+.formGroup .select,
+.formGroup .input,
+.formGroup .textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+.formGroup .select:focus,
+.formGroup .input:focus,
+.formGroup .textarea:focus {
+  border-color: #007bff;
+}
+.formGroup .textarea {
+  resize: none;
+}
+.formGroup .note {
+  font-size: 12px;
+  color: #888;
+  margin-top: -5px;
+}
+
+.resultContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f7fafc; /* Nền nhẹ nhàng */
+  border-radius: 8px;
+  border: 1px solid #e2e8f0; /* Viền sáng */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Hiệu ứng nổi */
+  transition: transform 0.3s;
+}
+.resultContainer:hover {
+  transform: translateY(-2px); /* Nổi lên nhẹ khi hover */
+}
+
+.resultTitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2d3748; /* Màu đậm hơn */
+  margin-bottom: 15px;
+}
+
+.result {
+  width: 100%;
+  min-height: 120px; /* Tăng chiều cao mặc định */
+  padding: 15px;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif; /* Font hiện đại */
+  color: #4a5568; /* Màu chữ tối vừa phải */
+  background: #edf2f7; /* Nền sáng hơn */
+  border: 1px solid #cbd5e0; /* Viền rõ hơn */
+  border-radius: 6px;
+  resize: none;
+  overflow-y: auto; /* Hiển thị scroll nếu vượt chiều cao */
+}
+
+.result::-webkit-scrollbar {
+  width: 6px;
+}
+
+.result::-webkit-scrollbar-thumb {
+  background-color: #a0aec0; /* Màu thanh cuộn */
+  border-radius: 10px;
+}
+
+.result::-webkit-scrollbar-thumb:hover {
+  background-color: #718096; /* Đậm hơn khi hover */
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.02); /* Nhấn mạnh hiệu ứng khi hover */
+}
+.button:active {
+  transform: scale(0.98); /* Tạo hiệu ứng bấm */
+}
+.button:disabled {
+  background-color: #d1d1d1; /* Màu xám nhạt */
+  color: #aaa; /* Màu chữ mờ */
+  cursor: not-allowed;
+  transform: none;
+}
+.button:disabled:hover {
+  background-color: #d1d1d1; /* Không đổi màu khi hover */
+}
+
+.smallstyle {
+  color: #a29f9f;
+  font-size: 14px;
+}/*# sourceMappingURL=WriteSalePostFacebook.module.css.map */

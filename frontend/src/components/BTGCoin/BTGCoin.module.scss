@@ -1,0 +1,102 @@
+.btgCoin {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--primary-color);
+    color: #ffffff;  /* Chỉnh chữ trắng */
+    border-radius: 9999px;
+    padding: 1rem;  /* Tăng padding cho đẹp hơn */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 1000;
+    overflow: hidden;
+  
+    &:hover {
+      transform: translateY(-4px) scale(1.08);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0) 70%);
+      transform: scale(0);
+      transition: transform 0.6s ease-out;
+    }
+  
+    &:hover::before {
+      transform: scale(1);
+    }
+  
+    .coinContent {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+  
+    .coinIcon {
+      width: 1.75rem;  /* Tăng kích thước icon */
+      height: 1.75rem;
+      transition: transform 0.3s ease;
+    }
+  
+    .balance {
+      font-weight: bold;
+      font-size: 1rem;  /* Tăng font-size */
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 0;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+      &.visible {
+        max-width: 250px;
+        opacity: 1;
+        margin-left: 1rem;
+      }
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .btgCoin {
+      top: 0.5rem;
+      right: 0.5rem;
+      padding: 0.75rem;
+  
+      .coinIcon {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+  
+      .balance {
+        font-size: 0.875rem;
+  
+        &.visible {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0.5);
+    }
+    70% {
+      box-shadow: 0 0 0 12px rgba(var(--primary-color-rgb), 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(var(--primary-color-rgb), 0);
+    }
+  }
+  
+  .btgCoin:hover {
+    animation: pulse 1.5s infinite;
+  }
+  

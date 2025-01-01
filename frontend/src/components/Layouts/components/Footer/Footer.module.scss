@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 0;
+    font-size: 14px;
+    color: #666666; /* Màu chữ nhạt */
+    background-color: #f9f9f9; /* Màu nền sáng */
+    border-top: 1px solid #e0e0e0; /* Đường viền trên */
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+  
+
+@media screen and (min-width: 1025px) {
+    .footer {
+      margin-left: 258px;
+    }
+}

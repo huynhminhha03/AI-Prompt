@@ -1,0 +1,320 @@
+.dashboard {
+  padding: 0 20px;
+  .overview {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .card {
+      padding: 10px;
+      background-color: #f4f6f9;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+
+      i {
+        color: var(--primary-color);
+      }
+      p {
+        font-size: 14px;
+        color: #666;
+      }
+
+      h3 {
+        font-size: 18px;
+        margin: 0;
+      }
+    }
+
+    .filter {
+      display: flex;
+      gap: 12px;
+      margin-top: 10px;
+      flex-wrap: wrap;
+
+      .filterBtn {
+        width: 120px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #333;
+        background-color: #f0f0f0;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease,
+          transform 0.2s ease; /* Thêm hiệu ứng transform */
+
+        &:hover {
+          background-color: var();
+          color: var(--button-color);
+          transform: scale(1.1); /* Phóng to nhẹ khi hover */
+        }
+
+        &.active {
+          background-color: var(--button-color);
+          color: white;
+
+          &:hover {
+            background-color: #0056b3; /* Tông đậm hơn của active */
+            transform: scale(1.15); /* Phóng to hơn khi active */
+          }
+        }
+      }
+    }
+  }
+
+  .aiForm {
+    margin-bottom: 20px;
+
+    .heading {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+
+      i {
+        color: var(--button-color);
+      }
+    }
+
+    .formCards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      margin-top: 10px;
+    }
+  }
+
+  .activity {
+    i {
+      color: var(--button-color);
+      margin-right: 4px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+    }
+  }
+}
+
+.custom-badge {
+  height: 24px;
+  color: white;
+  background-color: #6f42c1;
+  // đổi màu khi hover
+  &:hover {
+    background: #f8f5fd;
+    color: #6f42c1;
+  }
+}
+
+.badge-green {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.badge-blue {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btnaction {
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.dashboard-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.profile-section {
+  background-color: #f4f6f9;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+  }
+}
+
+.profile-info p {
+  margin: 0; /* Xóa margin */
+  padding: 0; /* Xóa padding */
+  line-height: 1.5; /* Đặt line-height chuẩn */
+}
+
+.username {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.email {
+  font-size: 14px;
+  color: gray;
+  margin-top: 10px;
+}
+.pin,
+.p-form .expiry-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.expiry-date {
+  strong {
+    color: #dc3545;
+  }
+}
+
+.expiry-date.isExpired {
+  strong {
+    color: var(--primary-color);
+  }
+}
+
+.p-form {
+  margin-top: 10px;
+}
+.chat-button {
+  margin-left: auto;
+  padding: 8px 16px;
+  background-color: #6c5ce7;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-button:hover {
+  background-color: #5e4ec1;
+}
+.formitem {
+  display: flex;
+  gap: 10px;
+  margin: -5px;
+  margin-left: 5px;
+}
+
+.page-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  font-size: 1.4rem;
+}
+
+.page-container {
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  gap: 8px;
+}
+
+.page {
+  display: flex;
+  padding: 8px 16px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+  background-color: #f4f4f4;
+  color: #555;
+  user-select: none;
+
+  &:hover {
+    border: 1px solid #d0d7de;
+    background-color: #e0e0e0;
+  }
+}
+
+.page.active {
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.page.disabled {
+  cursor: not-allowed;
+  color: #d0d7de;
+  background-color: white;
+}
+.activity-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease;
+  i {
+    color: var(--primary-color);
+  }
+  p {
+    font-size: 14px;
+    color: #666;
+  }
+  h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+}
+.activity-container h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.btnaction-recents {
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.no-results {
+  margin-left: 14px;
+  font-size: 1.4rem;
+  columns: #555;
+  font-style: italic;
+
+}

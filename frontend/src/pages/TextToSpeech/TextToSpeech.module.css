@@ -1,0 +1,200 @@
+.container {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 800px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.container:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+.container .header {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 16px;
+}
+.container .description {
+  font-size: 16px;
+  color: #666666;
+  background-color: #e1f7fa;
+  margin-top: 8px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.container .form {
+  margin-top: 20px;
+}
+.container .form .inputGroup {
+  margin-bottom: 16px;
+}
+.container .form .inputGroup label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 8px;
+}
+.container .form .inputGroup textarea,
+.container .form .inputGroup input {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  transition: border-color 0.2s ease-in-out;
+}
+.container .form .inputGroup textarea:focus,
+.container .form .inputGroup input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.container .form .button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: var(--button-color, #007bff);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.container .form .button:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+.container .form .button:active {
+  transform: scale(0.98);
+}
+.container .form .button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+.container .voiceListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .voiceListHeader {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 8px;
+}
+.container .voiceList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container .voiceItem {
+  display: flex;
+  align-items: center;
+}
+.container .voiceItem .radioLabel {
+  width: 370px;
+  background-color: #f8f9fa;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  display: flex;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.container .voiceItem .radioLabel:hover {
+  background-color: #e9ecef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.container .voiceItem .radioInput {
+  margin-right: 4px;
+}
+.container .voiceItem .voiceInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container .voiceItem .voiceInfo .voiceName {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-right: 8px;
+}
+.container .voiceItem .voiceInfo .playButton {
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--black-color);
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.container .voiceItem .voiceInfo .playButton:hover {
+  opacity: 0.8;
+}
+.container .voiceItem .voiceInfo .playButton span i {
+  font-size: 1.3rem;
+}
+.container .resultContainer {
+  margin-top: 24px;
+  text-align: center;
+}
+.container .resultContainer .resultHeader {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 16px;
+}
+.container .resultContainer .audioPlayer,
+.container .resultContainer img {
+  max-width: 100%;
+  margin-right: 8px;
+  border-radius: 28px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.container .resultContainer .downloadLink {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #28a745;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.container .resultContainer .downloadLink:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+.container .resultContainer .downloadLink:active {
+  transform: scale(0.95);
+}
+.container .error {
+  color: #dc3545;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 16px;
+}/*# sourceMappingURL=TextToSpeech.module.css.map */

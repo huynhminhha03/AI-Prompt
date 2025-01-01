@@ -1,0 +1,32 @@
+DB_HOST = 127.0.0.1
+DB_USERNAME = root
+DB_PASSWORD = minhha2k3
+DB_NAME = bit_ai
+DB_PORT = 3306
+FE_URL = https://ss0x2xqz-3000.asse.devtunnels.ms/
+
+BASE_URL = https://ss0x2xqz-8080.asse.devtunnels.ms/api/v1
+
+OPEN_AI_URL=https://api.openai.com/v1/
+OPENAI_API_KEY=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
+JWT_SECRET = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+HF_TOKEN = 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
+COZE_API_TOKEN = pat_lABYKw08iyQvoiATjIAWDtzTs4wLQ0tUsEl1PCvH33lp95GasdNqyhJP8LecT98r
+COZE_SPACE_ID = 7454401970922029072
+COZE_BOT_ID = 7454402779432632338
+
+EMAIL_SERVICE=gmail
+EMAIL_USER=hadep7a@gmail.com
+EMAIL_PASS=xvyhjsdyzmhhoulj
+
+CLOUDINARY_CLOUD_NAME=diqtbs6ve
+CLOUDINARY_API_KEY=267175837633718
+CLOUDINARY_SECRET_KEY=SUcmKniXBWJHL7qpJ7D9I7eVUbo
+
+VNP_TMN_CODE = 41RRF3KT
+VNP_HASH_SECRET = YITTLXVUCIE84TZZCABR8QNZG23G6O14
+VNP_URL = https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+VNP_RETURN_URL = https://ss0x2xqz-3000.asse.devtunnels.ms/payment/return
+VNP_API = https://sandbox.vnpayment.vn/merchant_webapi/api/transaction
+
+

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formGroup label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+.formGroup .input,
+.formGroup .textarea,
+.formGroup .select {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+  transition: border 0.3s ease;
+}
+.formGroup .input:focus,
+.formGroup .textarea:focus,
+.formGroup .select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+.formGroup .textarea {
+  resize: vertical;
+}
+
+.button {
+  padding: 12px 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.02); /* Nhấn mạnh hiệu ứng khi hover */
+}
+.button:active {
+  transform: scale(0.98); /* Tạo hiệu ứng bấm */
+}
+.button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.resultContainer {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resultTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.result {
+  width: 100%;
+  height: 120px;
+  padding: 12px;
+  font-size: 14px;
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  color: #444;
+}
+
+.copySuccess {
+  font-size: 14px;
+  color: #38a169;
+}
+
+.smallstyle {
+  color: #a29f9f;
+  font-size: 14px;
+}/*# sourceMappingURL=WriteScriptLiveStream.module.css.map */

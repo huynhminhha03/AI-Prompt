@@ -1,0 +1,28 @@
+.alert-box {
+    background-color: #fff3f3;
+    color: #d32f2f;
+    border: 1px solid #f5c6c6;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    margin: 8px;
+
+    .purchase-link {
+      color: #d32f2f;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        text-decoration: underline;
+        color: #b71c1c;
+      }
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .alert-box {
+      margin-left: 266px;
+    }
+  }

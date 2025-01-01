@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #e1f7fa;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.urlpath {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  padding: 2px 5px;
+  word-break: break-all;
+}
+
+.removeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+.formGroup label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.formGroup .input,
+.formGroup .textarea,
+.formGroup .select {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.formGroup .input:focus,
+.formGroup .textarea:focus,
+.formGroup .select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.formGroup .textarea {
+  resize: vertical;
+}
+
+.filepond--item {
+  display: none;
+}
+
+.button {
+  padding: 12px 16px;
+  font-size: 16px;
+  width: 100%;
+  color: #fff;
+  background-color: var(--button-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: scale(1.02); /* Nhấn mạnh hiệu ứng khi hover */
+}
+.button:active {
+  transform: scale(0.98); /* Tạo hiệu ứng bấm */
+}
+.button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.smallstyle {
+  color: #a29f9f;
+  font-size: 14px;
+}
+
+.previewImage {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: "cover";
+     object-fit: "cover";
+}
+.previewImage:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.previewImage:active {
+  transform: scale(0.98);
+}
+
+.previewImageContainer {
+  margin: 5px;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px #195a97;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.previewImageContainer:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  -ms-transform: scale(1.02);
+  -o-transform: scale(1.02);
+}
+.previewImageContainer:active {
+  transform: scale(0.98);
+}/*# sourceMappingURL=ImageProcessing.module.css.map */
