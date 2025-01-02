@@ -2,21 +2,21 @@
   "development": {
     "username": "root",
     "password": "12345678",
-    "database": "bit_ai",
+    "database": "RTC_ai",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "admin",
-    "database": "bit_ai",
+    "database": "RTC_ai",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "admin",
-    "database": "bit_ai",
+    "database": "RTC_ai",
     "host": "127.0.0.1",
     "dialect": "mysql"
   }

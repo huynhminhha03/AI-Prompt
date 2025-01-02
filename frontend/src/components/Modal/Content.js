@@ -68,8 +68,8 @@ function Content() {
     };
 
     const modalTitle = useMemo(() => {
-        if (modalType.includes('register')) return 'Đăng ký tài khoản BIT Group';
-        if (modalType.includes('login')) return 'Đăng nhập tài khoản BIT Group';
+        if (modalType.includes('register')) return 'Đăng ký tài khoản RTC Group';
+        if (modalType.includes('login')) return 'Đăng nhập tài khoản RTC Group';
         return modalType === 'forgotPassword' ? 'Quên mật khẩu?' : 'Đặt lại mật khẩu';
     }, [modalType]);
 
@@ -84,7 +84,7 @@ function Content() {
         <div className={cx('container')}>
             <header className={cx('header')}>
                 <Link to={routes.home}>
-                    <img className={cx('logo')} src={images.logo} alt="BIT Group_logo" />
+                    <img className={cx('logo')} src={images.logo} alt="RTC Group_logo" />
                 </Link>
                 <h1 className={cx('heading')}>{modalTitle}</h1>
                 <p

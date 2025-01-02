@@ -67,7 +67,7 @@ function Header({ transparent, hasBackBtn, isAdmin }) {
             <img
               className={cx("logo")}
               src={images.logo}
-              alt="BIT Group_logo"
+              alt="RTC Group_logo"
             />
           </Link>
           {config.routes.registeredCourse === location.pathname ||

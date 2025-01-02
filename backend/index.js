@@ -56,7 +56,7 @@ app.use(
 app.use(express.json());
 app.use('/api/v1/usage', UsageRoute);
 app.use('/api/v1/giftcode', GiftCodeRoute);
-app.use('/api/v1/openai', openAIRoute);
+app.use('/api/v1/openai', CozeRoute);
 app.use('/api/v1/user', UserRoute);
 app.use('/api/v1/vnpay', VnPayRoute);
 app.use('/api/v1/admin', AdminRoute);
